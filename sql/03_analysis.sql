@@ -36,7 +36,7 @@ SELECT
 FROM  customers c
 INNER JOIN orders o
     ON o.customer_id = c.customer_id
-INNER JOIN order_items o_i
+INNER JOIN order_items oi
     ON oi.order_id = o.order_id
 INNER JOIN products p
     ON p.product_id = oi.product_id;
